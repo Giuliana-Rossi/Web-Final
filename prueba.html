@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prueba.css"
+</head>
+<body>
+  <head>
+    <title>Tu peso en un lugar donde pesas menos</title>
+    <link rel="stylesheet"href="peso.css">
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en Marte</p>
+    <ul>
+         <li>Ingresa tu peso en el espacio Indicado</li>
+         <li>Haz click en el Botón calcular</li>
+         <li>Descubre tu Peso en otros Planetas</li>
+    </ul>
+    <span>Digite tu Peso(KILOGRAMOS)</span>
+    <p>
+  <a class="botonestilo" href="#" role="button" id="boton"> Calcule Aquí </a>
+  </p>
+  <script>
+// seleccionamos el enlace
+var boton=document.getElementById("boton");
+// cuando se pulsa en el enlace
+boton.onclick=function(e){
+    var usuario=prompt("Cual es tu peso?");
+var peso=parseInt(usuario);
+var g_tierra=9.8;
+var g_marte=3.7;
+var g_jupiter=24.8;
+var peso_final;
+peso_final=peso*g_marte/g_tierra;
+peso_final=parseInt(peso_final);
+window.alert("Tu peso en marte es: "+peso_final+" kilos");}
+</script>
+function saludo(persona){
+    console.log("Hola " + persona);
+  }
+  saludo("Kiara");
+  
+  saludo("Alfredo");
+  saludo("Diego");
+  
+  function sumar(n1, n2){
+    console.log(n1,n2);
+  }
+  sumar(3,2)
+  sumar(5,5); 
+  sumar(12,2);
+  
+  function calculaPrecioTotal(70){
+    var impuestos= 1.16;
+    var gastosEnvio= 10;
+    var precioTotal= (70 * impuestos) + gastosEnvio;
+    alert("Su total a pagar:" + precioTotal);
+  }
+  
+  var numero = prompt("introduce un numero entero");
+  var resultado = parImpar(numero);
+  alert("El numero" +numero+" es "+ resultado);
+  function parImpar(numero){
+    if(numero%2 ==0){
+      return "par";
+    }
+    else{ return "impar";}
+  }
+   
+  <script>
+  function calcula(){
+    let numero = document.fdatos.entrada.value;
+    let dato = document.getElementById("lista");
+    let valor = dato.options[lista.SelectIndex].value;
+  
+    let resultado = numero  * valor;
+    document.getElementById("salida").innerHTML = resultado;
+  }
+  </script>
+  <form name = "fdatos"> 
+    Introduce numero: <input type ="text" size="20" name="entrada"/>
+  </form>
+   <b>X</b>
+   <selec id = "lista" onchange ="calcula()">
+   <option value="1" selected>Uno</option>
+   <option value="2" selected>Dos</option>
+   <option value="3" selected>Tress</option>
+   <option value="4" selected>Cuatro</option>
+  </selec>
+  
+  
+  function crearCita(cita, callback){
+    var miCita= "como yo siempre digo, " + cita;
+    callback(miCita); 
+  }
+   
+  funcion.logCita(Cita){
+    console.log(cita);
+  }
+  
+  crearCita("come tus  vegetales!, logCita");
+</body>
+</html>
